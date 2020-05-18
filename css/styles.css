@@ -8,6 +8,8 @@
   --Yellow: #ffdd33;
   --faint-yellow: #fffaf8;
   --Red: #ff4422;
+  --light-pink: #ffebe9;
+
   --image-overlay: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.2) 10%,
@@ -222,4 +224,73 @@ body {
 .news__links li:not(:last-child) {
   border-right: 1px solid var(--Red);
   padding-right: 1.2rem;
+}
+
+.news-item{
+  position: relative;
+}
+
+.news-item__title{
+  color: white;
+  background-color: var(--Red);
+  font-size: 2rem;
+font-weight: bold;
+display: block;
+padding: .5rem 10rem;
+}
+
+.news-item__price{
+background-color: var(--light-pink);
+color: var(--black);
+line-height: 1.2;
+font-size: 1.6rem;
+font-weight: bold;
+display: block;
+padding: 1rem 10rem;
+}
+
+.news-item__img2{
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+
+.news-item__price--span{
+  display: block;
+  text-transform: uppercase;
+  color: var(--grey-1);
+  font-weight: 300;
+  font-size: 1.4rem;
+
+}
+
+.news-item__list{
+  margin-top: 1rem;
+  border-bottom: .1rem solid var(--Red);
+  margin-bottom: 1rem;
+}
+
+.news-item__list li{
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+.news-item__list li a,
+.news-item__text
+{
+  color: var(--grey-1);
+  font-size: 1.3rem;
+  padding:0 1.5rem;
+}
+
+.news-item__list .fas {
+margin-right: .5rem;
+color: var(--black);
+}
+.light-bg{
+  background-color: var(--faint-yellow);
+}
+.news-item__text{
+  padding-bottom: 1rem;
 }
