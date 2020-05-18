@@ -1,9 +1,23 @@
+:root {
+    --black: #131313;
+    --grey: hsla(0,0%,100%,.6);
+    --grey-light-1: #aaaaaa;
+    --grey-1: #555555;
+    --grey-2: #333333;
+   --lemon-green: #99cc33;
+    --Yellow: #ffdd33;
+    --faint-yellow: #fffaf8;
+    --Red: #ff4422;
 
+  }
+  
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
 }
 
 html{
@@ -16,6 +30,77 @@ body{
     line-height: 1.7;
 }
 
+.topnav,
+.stickynav,
+.yellow-bar{
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
 .topnav{
- background-color: black;
+ background-color: var(--black);
+ display: flex;
+ justify-content: space-between;
+}
+
+.topnav__left li,
+.topnav__right li,
+.stickynav__menu li {
+display: inline-block;
+
+margin-right: 2rem;
+}
+
+.topnav__left a,
+.topnav__right a{
+color: var(--grey);
+font-size: 1.2rem;
+font-weight:700;
+}
+
+.stickynav{
+    position: sticky;
+    background-color: white ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stickynav a{
+    color: var(--grey-light-1);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.yellow-bar{
+   background-color: var(--Yellow);
+}
+.yellow-bar a{
+color: black;
+ font-size: 1.4rem;
+ font-weight: 400;
+}
+
+.feature-article{
+    display: grid;
+    grid-template-areas: 
+    "feature-main feature-main feature-side1"
+    "feature-main feature-main feature-side2";
+    grid-gap: .5rem;
+}
+.feature-main{
+    background-color: red;
+    grid-area: feature-main;
+    height: 50rem;
+    background:linear-gradient(to right bottom, #ff4242,#000000c0) ,url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg") no-repeat;
+    background-size: cover;
+}
+
+.feature-side1{
+    background-color: blue;
+    grid-area: feature-side1;
+}
+.feature-side2{
+    background-color: rgb(238, 255, 0);
+    grid-area: feature-side2;
 }
