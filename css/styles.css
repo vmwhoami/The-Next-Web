@@ -41,6 +41,8 @@ body {
 .yellow-bar {
   padding: 1rem 2rem;
   width: 100%;
+  position: relative;
+  z-index: 100;
 }
 
 .topnav {
@@ -69,6 +71,7 @@ body {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  transition: all 0.4s;
 }
 
 .stickynav a {
@@ -80,6 +83,7 @@ body {
 
 .yellow-bar {
   background-color: var(--Yellow);
+  transition: all 0.4s;
 }
 .yellow-bar a {
   color: black;
@@ -226,30 +230,30 @@ body {
   padding-right: 1.2rem;
 }
 
-.news-item{
+.news-item {
   position: relative;
 }
 
-.news-item__title{
+.news-item__title {
   color: white;
   background-color: var(--Red);
   font-size: 2rem;
-font-weight: bold;
-display: block;
-padding: .5rem 10rem;
+  font-weight: bold;
+  display: block;
+  padding: 0.5rem 10rem;
 }
 
-.news-item__price{
-background-color: var(--light-pink);
-color: var(--black);
-line-height: 1.2;
-font-size: 1.6rem;
-font-weight: bold;
-display: block;
-padding: 1rem 0 1rem 10rem;
+.news-item__price {
+  background-color: var(--light-pink);
+  color: var(--black);
+  line-height: 1.2;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: block;
+  padding: 1rem 0 1rem 10rem;
 }
 
-.news-item__img2{
+.news-item__img2 {
   width: 6rem;
   height: 6rem;
   position: absolute;
@@ -257,40 +261,129 @@ padding: 1rem 0 1rem 10rem;
   left: 1rem;
 }
 
-.news-item__price--span{
+.news-item__price--span {
   display: block;
   text-transform: uppercase;
   color: var(--grey-1);
   font-weight: 300;
   font-size: 1.4rem;
-
 }
 
-.news-item__list{
+.news-item__list {
   margin-top: 1rem;
-  border-bottom: .1rem solid var(--Red);
+  border-bottom: 0.1rem solid var(--Red);
   margin-bottom: 1rem;
 }
 
-.news-item__list li{
+.news-item__list li {
   color: var(--black);
   margin-bottom: 1rem;
 }
 .news-item__list li a,
-.news-item__text
-{
+.news-item__text {
   color: var(--grey-1);
   font-size: 1.3rem;
-  padding:0 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .news-item__list .fas {
-margin-right: .5rem;
-color: var(--black);
+  margin-right: 0.5rem;
+  color: var(--black);
 }
-.light-bg{
+.light-bg {
   background-color: var(--faint-yellow);
 }
-.news-item__text{
+.news-item__text {
   padding-bottom: 1rem;
+}
+
+.news2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5rem;
+}
+
+.news2-item__img {
+  width: 100%;
+  background-position: top left;
+  background-size: cover;
+  height: 30rem;
+  position: relative;
+}
+
+.news2--1 {
+  background: var(--image-overlay), url(../img/FB-Avatar-Featured-368x276.jpg);
+}
+
+.news2--2 {
+  background: var(--image-overlay), url(../img/sale_28070_primary_image.jpg);
+}
+
+.news2--3 {
+  background: var(--image-overlay), url(../img/sale_27875_primary_image.jpg);
+}
+
+.news2--4 {
+  background: var(--image-overlay), url(../img/podium.png);
+}
+
+.news2--5 {
+  background: var(--image-overlay), url(../img/creative.png);
+}
+
+.news2--6 {
+  background: var(--image-overlay), url(../img/sale_28070_primary_image.jpg);
+}
+
+.news2-item__latest--img {
+  width: 9.6rem;
+  height: 9.6rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.news2__heading {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+}
+
+.news2-item__latest {
+  color: var(--Red);
+  background-color: var(--light-pink);
+  padding: 1.3rem;
+  line-height: 1.2;
+  position: relative;
+  margin-top: 1px;
+  margin-bottom: 0.5rem;
+  height: 9.6rem;
+  overflow: hidden;
+}
+
+.news2-item__latest--title {
+  width: 70%;
+}
+
+.news2-item__latest--title span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.news2-item__list {
+  padding: 1.5rem;
+}
+
+.news2-item__list li {
+  list-style: disc;
+  color: var(--Red);
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.news2-item__list--links {
+  color: #333333;
+  font-size: 1.2rem;
 }
