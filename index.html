@@ -35,7 +35,11 @@
       </ul>
     </div>
     <nav class="stickynav">
-        <img src="img/logo_red.svg" alt="" class="logo-top search-section__logo">
+      <img
+        src="img/logo_red.svg"
+        alt=""
+        class="logo-top search-section__logo"
+      />
       <ul class="stickynav__menu">
         <li><a href="#">latest</a></li>
         <li><a href="#">hard fork</a></li>
@@ -44,6 +48,7 @@
         <li><a href="#">growth quarters</a></li>
         <li><a href="#">neural</a></li>
       </ul>
+
       <div class="search">
         <input
           type="checkbox"
@@ -51,9 +56,39 @@
           id="search"
           class="search__input"
         />
-        <label for="search" class="search__label"
-          ><a href="#" class="search__display"><i class="fas fa-search"></i
-        ></label>
+        <label for="search" class="search__label">
+          <i class="fas fa-search"></i>
+        </label>
+
+        <div class="search-section">
+          <div class="search-section__top">
+            <img
+              src="img/logo_red.svg"
+              alt="logo"
+              class="search-section__logo"
+            />
+            <span><a href="#" class="search-section__close">&times;</a></span>
+          </div>
+
+          <form class="search-section__form" action="#">
+            <input
+              type="search"
+              class="search-section__input"
+              placeholder="Search"
+              focus
+            />
+          </form>
+        </div>
+
+        <div class="mobile-menu">
+          <input type="checkbox" id="check" />
+          <label for="check" class="mobile-menu__label">
+            <i class="fas fa-bars mobile-menu__btn" id="btn"></i>
+            <i class="fas fa-times mobile-menu__cancel" id="cancel"></i>
+          </label>
+
+          <div class="mobile-menu__section"></div>
+        </div>
       </div>
     </nav>
     <div class="yellow-bar">
@@ -924,22 +959,6 @@
         </p>
       </div>
     </footer>
-
-    <div class="search-section">
-      <div class="search-section__top">
-        <img src="img/logo_red.svg" alt="logo" class="search-section__logo" />
-        <span><a href="#" class="search-section__close">&times;</a></span>
-      </div>
-
-      <form class="search-section__form" action="#">
-        <input
-          type="search"
-          class="search-section__input"
-          placeholder="Search"
-          focus
-        />
-      </form>
-    </div>
 
     <!-- <script>
       let lastPos = window.pageYOffset;
