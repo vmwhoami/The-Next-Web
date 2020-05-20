@@ -9,12 +9,13 @@
   --faint-yellow: #fffaf8;
   --Red: #f42;
   --light-pink: #ffebe9;
-  --image-overlay: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.2) 10%,
-    rgba(0, 0, 0, 0.8) 60%,
-    rgba(0, 0, 0, 0.9)
-  );
+  --image-overlay:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.2) 10%,
+      rgba(0, 0, 0, 0.8) 60%,
+      rgba(0, 0, 0, 0.9)
+    );
 }
 
 * {
@@ -117,14 +118,14 @@ body {
   grid-area: feature-main;
   width: 100%;
   height: 30rem;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to left bottom,
       rgba(151, 18, 18, 0.8) 10%,
       rgba(0, 0, 0, 0.8) 60%,
       rgba(0, 0, 0, 1)
     ),
-    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg")
-      no-repeat;
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg") no-repeat;
   background-size: cover;
   padding: 2rem;
   color: #fff;
@@ -187,13 +188,13 @@ body {
   background: var(--image-overlay), url(../img/Sprint_image.jpg) no-repeat;
   background-size: cover;
   grid-area: feature-side1;
-
   padding: 1rem;
 }
 
 .feature-side2 {
   position: relative;
-  background: var(--image-overlay),
+  background:
+    var(--image-overlay),
     url(../img/customer-journey-796x417.png) no-repeat;
   background-size: cover;
   grid-area: feature-side2;
@@ -207,7 +208,8 @@ body {
 .main-heading {
   width: 100%;
   margin: 5.5rem 0 1.5rem 0;
-  display: flex;
+
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
 }
@@ -237,6 +239,10 @@ body {
   line-height: 1.2;
 }
 
+.news__links {
+  display: block;
+}
+
 .news__links li {
   display: inline-block;
   margin-left: 1rem;
@@ -259,6 +265,33 @@ body {
 .news-mobile .news-item {
   display: grid;
   grid-template-columns: 1fr 3fr;
+}
+
+.top-footer__links a {
+  color: var(--grey-light-1);
+  font-size: 1.3rem;
+}
+
+.search-section__top a {
+  font-size: 4rem;
+  line-height: 0.5;
+  color: var(--grey-light-1);
+}
+
+.news-item__list li a,
+.news-item__text {
+  color: var(--grey-1);
+  font-size: 1.3rem;
+  padding: 0 1.5rem;
+}
+
+.top-footer__social li a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .news-mobile .news-item a {
@@ -321,24 +354,6 @@ body {
   margin-top: 1rem;
   border-bottom: 0.1rem solid var(--Red);
   margin-bottom: 1rem;
-}
-
-.top-footer__links a {
-  color: var(--grey-light-1);
-  font-size: 1.3rem;
-}
-
-.search-section__top a {
-  font-size: 4rem;
-  line-height: 0.5;
-  color: var(--grey-light-1);
-}
-
-.news-item__list li a,
-.news-item__text {
-  color: var(--grey-1);
-  font-size: 1.3rem;
-  padding: 0 1.5rem;
 }
 
 .news-item__list .fas {
@@ -466,11 +481,6 @@ body {
   font-size: 1.7rem;
 }
 
-.news-mobile .news-item__img {
-  width: 13rem;
-  margin-right: 1.2rem;
-}
-
 .checked {
   text-decoration: line-through;
 }
@@ -499,15 +509,6 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: center;
-}
-
-.top-footer__social li a {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.6rem;
-  text-align: center;
 }
 
 .top-footer__links {
@@ -614,12 +615,17 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .main-heading {
+    display: flex;
+  }
+
   .news-funding .news-item:last-child {
     display: none;
   }
 
   .feature-article__logo {
     display: none;
+    width: 40rem;
   }
 
   .logo-top {
@@ -649,11 +655,6 @@ body {
     overflow: hidden;
   }
 
-  .feature-article__logo {
-    display: none;
-    width: 40rem;
-  }
-
   .feature-side1,
   .feature-side2 {
     width: 35vw;
@@ -668,10 +669,6 @@ body {
     width: 100%;
   }
 
-  .news-mobile .news-item {
-    display: inline-block;
-  }
-
   .news-mobile .news-item__img {
     width: 100%;
   }
@@ -683,6 +680,7 @@ body {
   .stickynav__menu {
     display: inline-block;
   }
+
   .topnav {
     background-color: var(--black);
     display: flex;
@@ -703,6 +701,10 @@ body {
     height: 8.5rem;
     z-index: 200;
   }
+
+  .news__links {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -720,6 +722,10 @@ body {
 
   .news2 {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .news-mobile .news-item {
+    display: inline-block;
   }
 
   .news-funding .news-item:last-child {
