@@ -9,13 +9,12 @@
   --faint-yellow: #fffaf8;
   --Red: #f42;
   --light-pink: #ffebe9;
-  --image-overlay:
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.2) 10%,
-      rgba(0, 0, 0, 0.8) 60%,
-      rgba(0, 0, 0, 0.9)
-    );
+  --image-overlay: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2) 10%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0.9)
+  );
 }
 
 * {
@@ -109,14 +108,14 @@ body {
   width: calc(64vw - 0.5rem);
   grid-area: feature-main;
   height: 55rem;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to left bottom,
       rgba(151, 18, 18, 0.8) 10%,
       rgba(0, 0, 0, 0.8) 60%,
       rgba(0, 0, 0, 1)
     ),
-    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg") no-repeat;
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg")
+      no-repeat;
   background-size: cover;
   padding: 2rem;
   color: #fff;
@@ -179,8 +178,7 @@ body {
 
 .feature-side2 {
   position: relative;
-  background:
-    var(--image-overlay),
+  background: var(--image-overlay),
     url(../img/customer-journey-796x417.png) no-repeat;
   background-size: cover;
   grid-area: feature-side2;
@@ -212,8 +210,6 @@ body {
 
 .news-item__img {
   width: 100%;
-
-  /* height: 15rem; */
 }
 
 .news-item__heading {
@@ -431,8 +427,6 @@ body {
 
 .news-bottom .news-item__img {
   width: 100%;
-
-  /* height: 21rem; */
 }
 
 .checked {
@@ -554,15 +548,6 @@ body {
 .mobile-menu {
   display: none;
 }
-
-/* #search:checked ~ .search-section {
-  opacity: 1;
-  visibility: visible;
-} */
-
-/* #search:checked .yellow-bar {
-  display: none;
-} */
 
 .stickynav__menu {
   width: 80%;
