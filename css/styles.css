@@ -10,10 +10,12 @@
   --Red: #f42;
   --light-pink: #ffebe9;
   --image-overlay:
-    linear-gradient(to bottom,
+    linear-gradient(
+      to bottom,
       rgba(255, 255, 255, 0.2) 10%,
       rgba(0, 0, 0, 0.8) 60%,
-      rgba(0, 0, 0, 0.9));
+      rgba(0, 0, 0, 0.9)
+    );
 }
 
 * {
@@ -164,7 +166,7 @@ body {
     "feature-side2";
   grid-gap: 0.8rem;
   overflow: hidden;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
 }
 
 .feature-main {
@@ -172,10 +174,12 @@ body {
   width: 100%;
   height: 30rem;
   background:
-    linear-gradient(to left bottom,
+    linear-gradient(
+      to left bottom,
       rgba(151, 18, 18, 0.8) 10%,
       rgba(0, 0, 0, 0.8) 60%,
-      rgba(0, 0, 0, 1)),
+      rgba(0, 0, 0, 1)
+    ),
     url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg") no-repeat;
   background-size: cover;
   padding: 2rem;
