@@ -657,11 +657,6 @@ body {
   width: 80%;
 }
 
-.search {
-  /* border-left: 1px solid var(--grey-light-1);
-  border-right: 1px solid var(--grey-light-1); */
-}
-
 @media (min-width: 768px) {
   html {
     font-size: 52%;
