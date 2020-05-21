@@ -50,8 +50,56 @@ body {
   z-index: 100;
 }
 
+.stickynav {
+  padding: 0;
+}
+
 .top-redlogo {
   display: none;
+}
+
+.search__label--menu {
+  color: var(--Red);
+  margin-left: 1rem;
+}
+
+.mobile-menu {
+  display: none;
+  padding: 0.2rem;
+  font-size: 2.2rem;
+  justify-content: space-between;
+  position: relative;
+}
+.mobile-menu #check {
+  display: none;
+}
+.mobile-menu__label {
+  position: relative;
+}
+.mobile-menu__btn {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  cursor: pointer;
+}
+.search__label {
+  border-left: none;
+}
+.mobile-menu__cancel {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  display: none;
+  cursor: pointer;
+}
+.mobile-menu__section {
+  display: none;
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #000;
 }
 
 .topnav,
@@ -83,6 +131,16 @@ body {
   display: flex;
   justify-content: space-between;
   transition: all 0.4s;
+}
+
+.logo-link {
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  padding: 1.2rem;
+}
+
+.logo-top {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .stickynav a {
@@ -537,11 +595,18 @@ body {
 
 .search__label {
   color: var(--grey-light-1);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 1rem;
   padding-left: 2rem;
-  border-left: 0.5px solid rgba(167, 166, 166, 0.829);
+  display: inline-block;
   cursor: pointer;
+}
+
+.search__label .fa-search {
+  border-left: 0.5px solid rgba(167, 166, 166, 0.829);
+  border-right: 0.5px solid rgba(167, 166, 166, 0.829);
+  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
 .search__input {
@@ -588,22 +653,27 @@ body {
   border-bottom: 1px solid;
 }
 
-.mobile-menu {
-  display: none;
-}
-
 .stickynav__menu {
   width: 80%;
 }
 
 .search {
-  width: 20%;
-  text-align: right;
+  /* border-left: 1px solid var(--grey-light-1);
+  border-right: 1px solid var(--grey-light-1); */
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 52%;
+  }
+
+  .mobile-menu,
+  .logo-link {
+    display: none;
+  }
+
+  .search__label--menu {
+    display: none;
   }
 
   .news {
@@ -700,13 +770,25 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 8.5rem;
-    height: 8.5rem;
+    width: 9rem;
+    height: 9rem;
     z-index: 200;
   }
 
   .news__links {
     display: inline-block;
+  }
+
+  .search__label {
+    display: inline;
+    border-left: 0.5px solid rgba(167, 166, 166, 0.829);
+  }
+
+  .search__label .fa-search {
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    padding: 0;
   }
 }
 
