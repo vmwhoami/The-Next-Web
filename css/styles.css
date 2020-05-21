@@ -46,7 +46,8 @@ body {
 .topnav,
 .stickynav,
 .yellow-bar {
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   position: relative;
   z-index: 100;
@@ -590,21 +591,29 @@ body {
   margin-right: 0.5rem;
 }
 
+.search {
+  width: 15%;
+}
+
 .search__label {
   color: var(--grey-light-1);
   font-size: 1.8rem;
-  padding: 1rem;
-  padding-left: 2rem;
-  display: inline-block;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   cursor: pointer;
   border-left: none;
 }
 
-.search__label .fa-search {
+.border-left {
+  height: 100%;
+  width: 100%;
   border-left: 0.5px solid rgba(167, 166, 166, 0.829);
-  border-right: 0.5px solid rgba(167, 166, 166, 0.829);
-  padding: 0 1rem;
-  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search__input {
@@ -651,10 +660,6 @@ body {
   border-bottom: 1px solid;
 }
 
-.stickynav__menu {
-  width: 80%;
-}
-
 @media (min-width: 768px) {
   html {
     font-size: 52%;
@@ -665,7 +670,14 @@ body {
     display: none;
   }
 
-  .search__label--menu {
+  .search {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search__label .border-left:last-child {
     display: none;
   }
 
@@ -698,13 +710,22 @@ body {
     display: none;
   }
 
-  .topnav,
-  .stickynav,
+  .topnav__left,
+  .topnav__right {
+    display: flex;
+    align-items: center;
+  }
+
   .yellow-bar {
-    padding: 1rem 2rem;
+    height: 3rem;
+    padding-left: 2rem;
+  }
+
+  .stickynav {
+    padding: 0 2rem;
     width: 100%;
     position: relative;
-    z-index: 100;
+    height: 4.8rem;
   }
 
   .feature-main {
@@ -744,13 +765,17 @@ body {
   }
 
   .stickynav__menu {
-    display: inline-block;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .topnav {
     background-color: var(--black);
     display: flex;
     justify-content: space-between;
+    height: 3.2rem;
   }
 
   .topnav,
@@ -764,7 +789,7 @@ body {
     left: 0;
     top: 0;
     width: 9rem;
-    height: 9rem;
+    height: 8rem;
     z-index: 200;
   }
 
@@ -773,7 +798,6 @@ body {
   }
 
   .search__label {
-    display: inline;
     border-left: 0.5px solid rgba(167, 166, 166, 0.829);
   }
 
