@@ -4,9 +4,9 @@ The goal of this project is to build a responsive clone of [The Next Web website
 
 > In this project, we made use of Grids, Flexbox and Positions and layout elements on the page correctly.
 
-> Media queries were used to target different screen sizes in order for us to effectively and efficiently let the website fit correctly to each screen sizes.
+> Media queries were used to target "different” screen sizes in order for us to effectively and efficiently let the website fit correctly to each screen size.
 
-> Building this project was fun as we practiced different css rules and effectively combine grids, flex and position.
+> Building this project was fun as we practiced different css rules and effectively combine grids, flex and position.
 
 ![screenshot](./img/screenshot.jpg)
 ![screenshot](./img/screenshot-mobile.jpg)
@@ -30,7 +30,7 @@ This project covers the following HTML and CSS3 concepts
 
 ## Getting Started
 
-To get a local copy of the repository please run the following commands on your terminal:
+To get a local copy of the repository, please run the following commands on your terminal:
 
 ```
 $ cd <folder>
@@ -57,9 +57,9 @@ $ git clone https://github.com/vmwhoami/The-Next-Web
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/vmwhoami/The-Next-Web/issues).
+Check the [issues page](https://github.com/vmwhoami/The-Next-Web/issues).
 
 ## Show your support
 
